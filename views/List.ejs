@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="box" id="heading">
+  <h1 style="color: purple"><%=kindofday%></h1>
+</div>
+
+<div class="box">
+  <ul>
+    <div class="item">
+      <input type="checkbox"  >
+      <p>Web development</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" >
+      <p>Competative programming</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" >
+      <p>sleeping</p>
+    </div>
+
+
+
+
+    <%  for(let i=0;i<newy.length;i++){%>
+        <div class="item">
+    <input type="checkbox" >
+      <p><%= newy[i]%></p>
+      </div>
+
+    <%  }%>
+
+
+
+  </ul>
+  <form class="item" action="/" method="post">
+    <input type="text" name="work1" placeholder="New Item" autocomplete="off" >
+    <button type="submit" name="button">+</button>
+  </form>
+</div>
+
+
+
+  </body>
+</html>
